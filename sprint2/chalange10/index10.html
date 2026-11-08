@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+      <button  class="rounded-md ml-20 mt-20 border w-30 h-10" id="add-contact"> + add contact</button>
+
+      <form id="contact-form" class="border rounded-md flex flex-col w-70 hidden">
+
+       <label for="name"> nom:</label>
+       <input type="text" id="name" placeholder="nom" required class="border rounded-md h-10" >
+       <label for="tel">tel:</label>
+       <input type="text" id="tel" placeholder="tel" required class="border rounded-md h-10" >
+       <label for="email" >email:</label>
+       <input type="text" id="email" placeholder="email" required class="border rounded-md h-10" >
+       <button type="submit" id="add">add</button>
+
+
+      </form>
+
+        <h1 class="font-bold">your contacts</h1>
+        <div><input type="text" id="recherch" class="border rounded-md w-50 h-7"> <button class="border rounded-md" id="btn-rechercher">recherch</button></div>
+        
+      <ul class=" flex gap-10" id="contact-continer">
+     
+     
+
+
+
+
+      </ul>
+
+
+
+
+
+    <script src="app10.js"></script>
+</body>
+</html>
