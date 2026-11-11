@@ -93,7 +93,7 @@ function midifier() {
             tel.value = contacts[index].tel
             email.value = contacts[index].email
             if (index != -1) { contacts.splice(index, 1) }
-            save
+            save()
             randercontac(contacts)
         })
     })
@@ -108,7 +108,8 @@ function fovoriet() {
             let id = Number(button.dataset.id)
             let index = contacts.findIndex(contact => contact.id === id)
 
-            if (index != -1) { contacts[index].favorie = !contacts[index].favorie;save() }
+            if (index != -1) { contacts[index].favorie = !contacts[index].favorie; }
+            save()
             randercontac(contacts)
         })
     })
